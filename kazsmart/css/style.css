@@ -12,6 +12,16 @@ body {
   background: #212121;
 }
 
+p {
+  text-indent: 1.5em;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 1em;
+}
+
 .space {
   height: 70px;
 }
@@ -49,6 +59,7 @@ nav {
 .nav-item {
   margin-right: 30px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .nav-item:hover {
@@ -85,13 +96,12 @@ section {
 }
 
 .txt {
-  width: 45%;
-  text-align: center;
+  width: 47.5%;
   margin: 0 auto;
 }
 
 .img {
-  width: 45%;
+  width: 47.5%;
   margin: 0 auto;
 }
 
