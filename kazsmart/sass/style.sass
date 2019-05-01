@@ -40,6 +40,9 @@ header
   background: $black-0
   box-shadow: 0 2px 4px rgba(0,0,0,.5)
 
+.header_m
+  display: none
+
 #logo
   width: 178px
   height: 40px
@@ -114,3 +117,26 @@ footer
   background: $black-0
   padding: 10px 0
   margin-top: 50px
+
+@media screen and (max-width: 999px)
+  .header_p
+    display: none
+
+  .header_m
+    display: flex
+
+  nav
+    display: none
+
+  section
+    width: 100%
+
+  .block
+    width: 95%
+    margin: 10px auto 0 auto
+  
+  .txt
+    width: 100%
+
+  .img
+    width: 100%
