@@ -157,7 +157,6 @@ section {
 }
 
 .title {
-  width: 100%;
   font-size: 24px;
   margin-left: 20px;
 }
@@ -222,13 +221,6 @@ footer {
   margin-top: 50px;
 }
 
-.reverse {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-}
-
 @media screen and (max-width: 999px) {
   .header_p {
     display: none;
@@ -259,6 +251,18 @@ footer {
   }
   .img {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  img {
+    margin: 0 auto;
+  }
+  .reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
 }
 /*# sourceMappingURL=style.css.map */
