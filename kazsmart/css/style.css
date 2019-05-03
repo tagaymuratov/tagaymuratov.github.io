@@ -251,12 +251,10 @@ footer {
   }
   .img {
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
   }
   img {
     margin: 0 auto;
+    display: block;
   }
   .reverse {
     -webkit-box-orient: vertical;
