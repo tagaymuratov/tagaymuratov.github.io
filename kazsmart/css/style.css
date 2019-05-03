@@ -8,10 +8,6 @@
   color: #fefefe;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background: #161616;
 }
@@ -235,8 +231,7 @@ footer {
   }
   .nav-item {
     width: 100%;
-    margin: 5px 0;
-    padding: 0 20px;
+    padding: 5px 20px;
   }
   section {
     width: 100%;

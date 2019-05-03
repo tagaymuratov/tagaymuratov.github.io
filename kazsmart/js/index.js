@@ -20,6 +20,14 @@ $(document).ready(function(){
     });
 
     $('.nav2item').on('click', function(){
-        $('.menuIcon').click()
+        $('.menuIcon').click();
+    });
+
+    $('a[href*="#"]').on('click', function(){
+        var anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($.attr(this, 'href')).offset().top
+        }, 750);
+        return false;
     });
 });
