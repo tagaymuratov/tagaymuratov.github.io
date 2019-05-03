@@ -1,6 +1,6 @@
 $(document).ready(function(){
     
-    $(document).on("click", ".menuIcon", function(e){
+    /*$(document).on("click", ".menuIcon", function(e){
         e.preventDefault();
         $('.menuIcon').toggleClass('menuIcon_b');
         if($('.nav2').is(':visible')) $('nav').slideUp(250);
@@ -11,9 +11,9 @@ $(document).ready(function(){
         e.preventDefault();
         $('.menuIcon').toggleClass('menuIcon_b');
         $('.nav2').slideUp(250);
-    });
+    });*/
     
-    /*$('.menuIcon').on('click touchend', function(){
+    $('.menuIcon').on('click', function(){
         $(this).toggleClass('menuIcon_b');
         if($('.nav2').is(':visible')) $('nav').slideUp(250);
         else $('.nav2').slideDown(250);
@@ -21,5 +21,5 @@ $(document).ready(function(){
 
     $('.nav2item').on('click', function(){
         $('.menuIcon').click()
-    });*/
+    });
 });
