@@ -1,2 +1,2 @@
 # tagaymuratov.github.io
-asdf
+tagaymuratov.github.io/kazsmart
