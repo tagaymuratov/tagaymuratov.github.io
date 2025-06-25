@@ -1,0 +1,140 @@
+:root {
+  /*color-scheme: light dark;*/
+  --color-on-surf: #000000;
+  --color-brand-blue: #123193;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 16px;
+  font-style: normal;
+  letter-spacing: 0;
+}
+
+a{
+  text-decoration: none;
+  display: block;
+  color: var(--color-on-surf);
+}
+
+header{
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  padding: 0 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+  img{
+    height: 2rem;
+    margin-right: auto;
+  }
+
+  a{
+    margin-left: 1rem;
+  }
+}
+
+section{
+  padding: 1rem 0;
+  max-width: 75rem;
+  margin: 2rem auto;
+}
+
+.title{
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  color: var(--color-brand-blue);
+  font-size: 2rem;
+  padding: 0 1rem;
+}
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 3rem;
+  padding: 2rem;
+  align-items: center;
+}
+
+.grey{
+  background-color: #efefff;
+  border-radius: 1rem;
+  @media (max-width:1232px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.s1{
+  grid-template-columns: 4fr 3fr;
+  order: revert;
+
+  @media (max-width:800px) {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+}
+
+.s1b2{
+  margin: auto 0;
+  img, h2, p{
+    margin-bottom: 1rem;
+  }
+}
+
+.s2b2{
+  display: grid;
+  row-gap: 1rem;
+  img{
+    max-height: 20rem;
+  }
+}
+
+.logo_txt{
+  max-width: 100%;
+  max-height: 5rem;
+}
+
+video{
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+img{
+  border-radius: .5rem;
+  max-width: 100%;
+}
+
+footer{
+  background: var(--color-brand-blue);
+  color: white;
+  margin-top: 3rem;
+
+  .container{
+    max-width: 75rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 13rem);
+    gap: 2rem;
+    padding: 2rem;
+    margin: auto;
+  }
+}
+
+.footer_block{max-width: 13rem;}
